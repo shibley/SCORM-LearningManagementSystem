@@ -71,8 +71,8 @@ namespace OpenSourceSCORMLMS
             
             var provider = new Microsoft.AspNetCore.StaticFiles.FileExtensionContentTypeProvider();
 //          Add new mappings
-pr          provider.Mappings[".json"] = "application/json";
-pr          provider.Mappings[".jsonp"] = "application/javascript";
+            provider.Mappings[".json"] = "application/json";
+            provider.Mappings[".jsonp"] = "application/javascript";
            
             app.UseMvc();
             var httpContextAccessor = app.ApplicationServices.GetRequiredService<IHttpContextAccessor>();
